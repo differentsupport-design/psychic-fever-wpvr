@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Request PSYCHIC FEVER on WPVR 🎉</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Serif+Display&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --black: #0f0f0f;
+    --white: #ffffff;
+    --cream: #faf8f4;
+    --gold: #c9963a;
+    --gold-light: #f5e6c8;
+    --gold-dark: #a07420;
+    --gray: #6b6b6b;
+    --gray-light: #e8e6e2;
+    --radius: 10px;
+  }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--black);
+    color: var(--white);
+    min-height: 100vh;
+    padding: 0;
+  }
+
+  /* Hero */
+  .hero {
+    background: var(--black);
+    padding: 3.5rem 1.5rem 2.5rem;
+    text-align: center;
+    border-bottom: 1px solid #222;
+  }
+
+  .hero-eyebrow {
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1rem;
+    font-weight: 500;
+  }
+
+  .hero-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(2rem, 7vw, 3.4rem);
+    font-weight: 400;
+    line-height: 1.1;
+    color: var(--white);
+    margin-bottom: 0.75rem;
+  }
+
+  .hero-title em {
+    font-style: normal;
+    color: var(--gold);
+  }
+
+  .hero-date {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--black);
+    font-size: 13px;
+    font-weight: 600;
+    padding: 5px 18px;
+    border-radius: 100px;
+    margin-bottom: 1.25rem;
+    letter-spacing: 0.03em;
+  }
+
+  .hero-sub {
+    font-size: 15px;
+    color: #aaa;
+    max-width: 480px;
+    margin: 0 auto;
+    line-height: 1.65;
+  }
+
+  /* Steps */
+  .steps {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    background: #161616;
+    border-bottom: 1px solid #222;
+    padding: 0;
+    overflow-x: auto;
+  }
+
+  .step {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 20px;
+    font-size: 13px;
+    color: #888;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .step-num {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #2a2a2a;
+    color: var(--gold);
+    font-size: 11px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .step-divider {
+    color: #333;
+    font-size: 16px;
+    align-self: center;
+  }
+
+  /* Main */
+  .main {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 2.5rem 1.25rem 4rem;
+  }
+
+  .section-label {
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 500;
+    margin-bottom: 1.25rem;
+  }
+
+  /* Form link card */
+  .form-card {
+    background: #161616;
+    border: 1px solid #2a2a2a;
+    border-radius: var(--radius);
+    padding: 1.25rem;
+    margin-bottom: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .form-card-text p:first-child {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--white);
+    margin-bottom: 3px;
+  }
+
+  .form-card-text p:last-child {
+    font-size: 12px;
+    color: #777;
+  }
+
+  .form-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    background: var(--gold);
+    color: var(--black);
+    font-size: 13px;
+    font-weight: 600;
+    padding: 9px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background 0.15s;
+    flex-shrink: 0;
+  }
+
+  .form-btn:hover { background: var(--gold-dark); color: var(--white); }
+
+  /* Message cards */
+  .cards { display: flex; flex-direction: column; gap: 14px; }
+
+  .card {
+    background: #161616;
+    border: 1px solid #2a2a2a;
+    border-radius: var(--radius);
+    padding: 1.1rem 1.25rem;
+    transition: border-color 0.15s;
+  }
+
+  .card:hover { border-color: #3a3a3a; }
+
+  .card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    gap: 10px;
+  }
+
+  .card-badge {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--gold);
+    background: rgba(201,150,58,0.12);
+    border: 1px solid rgba(201,150,58,0.25);
+    border-radius: 6px;
+    padding: 3px 10px;
+    letter-spacing: 0.04em;
+  }
+
+  .copy-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #888;
+    background: #222;
+    border: 1px solid #333;
+    border-radius: 7px;
+    padding: 5px 12px;
+    cursor: pointer;
+    transition: all 0.15s;
+    font-family: 'DM Sans', sans-serif;
+    white-space: nowrap;
+  }
+
+  .copy-btn:hover { background: #2c2c2c; color: #bbb; border-color: #444; }
+  .copy-btn.copied { background: rgba(201,150,58,0.12); color: var(--gold); border-color: rgba(201,150,58,0.35); }
+
+  .copy-icon { font-size: 14px; line-height: 1; }
+
+  .card-text {
+    font-size: 14px;
+    color: #ccc;
+    line-height: 1.7;
+  }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 2rem 1.5rem 3rem;
+    border-top: 1px solid #1e1e1e;
+  }
+
+  .footer-tag {
+    font-size: 12px;
+    color: #555;
+  }
+
+  .footer-tag a {
+    color: var(--gold);
+    text-decoration: none;
+  }
+
+  .hashtag-row {
+    margin-top: 1.25rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .hashtag {
+    font-size: 12px;
+    color: #777;
+    background: #161616;
+    border: 1px solid #2a2a2a;
+    border-radius: 100px;
+    padding: 4px 14px;
+    cursor: pointer;
+    transition: all 0.15s;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  .hashtag:hover { color: var(--gold); border-color: rgba(201,150,58,0.35); background: rgba(201,150,58,0.07); }
+  .hashtag.copied { color: var(--gold); border-color: rgba(201,150,58,0.5); }
+
+  @media (max-width: 480px) {
+    .hero { padding: 2.5rem 1rem 2rem; }
+    .form-card { flex-direction: column; align-items: flex-start; }
+    .form-btn { width: 100%; justify-content: center; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <p class="hero-eyebrow">Fan Campaign · Radio Request</p>
+  <h1 class="hero-title">Request <em>PSYCHIC FEVER</em><br>on WPVR</h1>
+  <div style="margin-bottom: 1.25rem;">
+    <span class="hero-date">🎉 4th Anniversary · July 13</span>
+  </div>
+  <p class="hero-sub">Copy one of the messages below and paste it into the WPVR request form. It takes 30 seconds — let's get them on air!</p>
+</div>
+
+<div class="steps">
+  <div class="step">
+    <span class="step-num">1</span>
+    Open the WPVR form
+  </div>
+  <div class="step-divider">›</div>
+  <div class="step">
+    <span class="step-num">2</span>
+    Copy a message below
+  </div>
+  <div class="step-divider">›</div>
+  <div class="step">
+    <span class="step-num">3</span>
+    Paste &amp; submit!
+  </div>
+</div>
+
+<div class="main">
+
+  <p class="section-label">Step 1 — Open the form</p>
+  <div class="form-card">
+    <div class="form-card-text">
+      <p>WPVR Request Form</p>
+      <p>wpvr.com — New York Radio</p>
+    </div>
+    <a class="form-btn" href="https://wpvr.com" target="_blank" rel="noopener">
+      Open form ↗
+    </a>
+  </div>
+
+  <p class="section-label">Step 2 — Copy a message &amp; paste into the form</p>
+  <div class="cards" id="cards"></div>
+
+</div>
+
+<div class="footer">
+  <div class="hashtag-row">
+    <button class="hashtag" data-text="#PSYCHICFEVER">#PSYCHICFEVER</button>
+    <button class="hashtag" data-text="#PSYCHICFEVER4thAnniversary">#PSYCHICFEVER4thAnniversary</button>
+    <button class="hashtag" data-text="#EXILETRIBE">#EXILETRIBE</button>
+    <button class="hashtag" data-text="#WPVR">#WPVR</button>
+  </div>
+  <p class="footer-tag" style="margin-top: 1.25rem;">Made with love by PSYCHIC FEVER fans 💛</p>
+</div>
+
+<script>
+const messages = [
+  {
+    label: "Message 1",
+    text: "Hi WPVR! PSYCHIC FEVER from EXILE TRIBE is celebrating their 4th debut anniversary on July 13th! We'd love it if you could feature them on your station around that special date. Please give them some love!"
+  },
+  {
+    label: "Message 2",
+    text: "Hello WPVR! On July 13th, PSYCHIC FEVER from EXILE TRIBE marks their 4th anniversary since debut. As a huge fan, I would be thrilled if you could dedicate a special feature or segment to them to celebrate this milestone. Thank you so much!"
+  },
+  {
+    label: "Message 3",
+    text: "Hi WPVR! I'm writing to request a special feature for PSYCHIC FEVER from EXILE TRIBE, a dynamic Japanese group celebrating their 4th debut anniversary on July 13th. It would mean the world to fans everywhere if you could spotlight them on that day!"
+  },
+  {
+    label: "Message 4",
+    text: "Hey WPVR! PSYCHIC FEVER from EXILE TRIBE turns 4 on July 13th! Could you celebrate with us by featuring them on your show? We'd love to hear them on your station!"
+  },
+  {
+    label: "Message 5",
+    text: "Dear WPVR, I would like to request a special radio feature for PSYCHIC FEVER from EXILE TRIBE. They will be celebrating their 4th debut anniversary on July 13th, and a dedicated segment on your station would be a wonderful way to mark this milestone for fans around the world."
+  }
+];
+
+const container = document.getElementById('cards');
+
+messages.forEach(msg => {
+  const card = document.createElement('div');
+  card.className = 'card';
+
+  const top = document.createElement('div');
+  top.className = 'card-top';
+
+  const badge = document.createElement('span');
+  badge.className = 'card-badge';
+  badge.textContent = msg.label;
+
+  const btn = document.createElement('button');
+  btn.className = 'copy-btn';
+  btn.innerHTML = '<span class="copy-icon">⎘</span> Copy';
+
+  btn.addEventListener('click', () => {
+    navigator.clipboard.writeText(msg.text).then(() => {
+      btn.classList.add('copied');
+      btn.innerHTML = '<span class="copy-icon">✓</span> Copied!';
+      setTimeout(() => {
+        btn.classList.remove('copied');
+        btn.innerHTML = '<span class="copy-icon">⎘</span> Copy';
+      }, 2200);
+    });
+  });
+
+  top.appendChild(badge);
+  top.appendChild(btn);
+
+  const text = document.createElement('p');
+  text.className = 'card-text';
+  text.textContent = msg.text;
+
+  card.appendChild(top);
+  card.appendChild(text);
+  container.appendChild(card);
+});
+
+document.querySelectorAll('.hashtag').forEach(btn => {
+  btn.addEventListener('click', () => {
+    navigator.clipboard.writeText(btn.dataset.text).then(() => {
+      btn.classList.add('copied');
+      const orig = btn.textContent;
+      btn.textContent = '✓ ' + orig;
+      setTimeout(() => {
+        btn.classList.remove('copied');
+        btn.textContent = orig;
+      }, 1800);
+    });
+  });
+});
+</script>
+</body>
+</html>
